@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f5f7fa;
+}
+
+.header {
+    background-color: #263238;
+    color: white;
+    padding: 25px 40px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header p {
+    margin-top: 8px;
+    color: #cfd8dc;
+}
+
+.container {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.api-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.api-header {
+    padding: 18px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.api-header:hover {
+    background-color: #f8f9fa;
+}
+
+.method {
+    font-weight: bold;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #1976d2;
+}
+
+.path {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.summary {
+    color: #666;
+    margin-left: auto;
+}
+
+.api-details {
+    display: none;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+}
+
+.api-details p {
+    color: #555;
+}
+
+.request-section {
+    margin-top: 20px;
+}
+
+.request-section h3 {
+    margin-bottom: 8px;
+}
+
+.request-section pre {
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.response-section {
+    margin-top: 25px;
+}
+
+.response-item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.response-item h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.response-item pre {
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.auth-container {
+    background: white;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h2 {
+    margin-top: 0;
+}
+
+.auth-row {
+    display: flex;
+    gap: 10px;
+}
+
+#jwt-token {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-row button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#auth-status {
+    margin-bottom: 0;
+}
+
+.request-editor {
+    width: 100%;
+    min-height: 180px;
+    padding: 12px;
+    font-family: monospace;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.try-button,
+.execute-button {
+    padding: 10px 18px;
+    margin: 10px 5px 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.execute-response {
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.execute-response pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+
+.response-status {
+    margin: 10px 0 20px 0;
+}
+
+.response-headers {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.response-headers th,
+.response-headers td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.response-headers th {
+    font-weight: bold;
+}
+
+.execute-response pre {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+.parameter-row {
+    margin-bottom: 15px;
+}
+
+.parameter-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.parameter-input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.parameter-row small {
+    display: block;
+    margin-top: 4px;
+    color: #666;
+}
+
+.required {
+    color: red;
+    margin-left: 3px;
+}
+
+
+.schema-box {
+    margin-top: 15px;
+    padding: 14px;
+    background: #f7f9fa;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    max-width: 700px;
+}
+
+.schema-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.schema-name {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.schema-object-type {
+    color: #555;
+    font-size: 14px;
+}
+
+.schema-property {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0 8px 25px;
+    border-left: 2px solid #d9d9d9;
+    margin-left: 5px;
+}
+
+.schema-property-name {
+    min-width: 150px;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.schema-property-type {
+    color: #3f51b5;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.schema-format {
+    background: #e8a31a;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+

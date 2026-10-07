@@ -1,0 +1,80 @@
+:root {
+  --font-sans: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: "Cascadia Code", Consolas, "SF Mono", monospace;
+
+  --text-xs: 11.5px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-lg: 16px;
+  --text-xl: 22px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --radius-sm: 5px;
+  --radius-md: 7px;
+  --radius-lg: 10px;
+
+  --topbar-h: 52px;
+  --sidebar-w: 288px;
+  --content-max: 1100px;
+}
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --surface-2: #f1f4f8;
+
+  --border: #e2e6ec;
+  --border-strong: #cbd2dc;
+
+  --text: #172033;
+  --text-muted: #5d6878;
+  --text-faint: #8b95a5;
+
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: #eff6ff;
+  --on-accent: #ffffff;
+
+  --success: #15803d;
+  --success-soft: #dcfce7;
+
+  --warning: #b45309;
+  --warning-soft: #fef3c7;
+
+  --danger: #dc2626;
+  --danger-soft: #fee2e2;
+
+  --info: #2563eb;
+  --info-soft: #dbeafe;
+
+  --m-get-fg: #15803d;
+  --m-get-bg: #dcfce7;
+
+  --m-post-fg: #2563eb;
+  --m-post-bg: #dbeafe;
+
+  --m-put-fg: #b45309;
+  --m-put-bg: #fef3c7;
+
+  --m-patch-fg: #7c3aed;
+  --m-patch-bg: #ede9fe;
+
+  --m-delete-fg: #dc2626;
+  --m-delete-bg: #fee2e2;
+
+  --m-other-fg: #5d6878;
+  --m-other-bg: #eef1f5;
+
+  --shadow-pop: 0 8px 28px rgba(23, 32, 51, .12);
+
+  --focus-ring: 0 0 0 2px #fff, 0 0 0 4px var(--accent);
+}
